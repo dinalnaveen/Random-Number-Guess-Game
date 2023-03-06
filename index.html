@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <h1>I am Thinking of a number Between 1-10 Can you guess it</h1>
+        <p id="number"><input class="inputColor" type="text" ></p>
+        <button id="guessButton">GUESS</button>
+        <p id="ShowResult"></p>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("guessButton").onclick = function(){
+            var EnterNumber = document.getElementById("number").value;
+            var RandomNumber = Math.floor(Math.random() * 11);
+
+            if(EnterNumber == RandomNumber){
+                document.getElementById("ShowResult").innerHTML = "Yahhh You Won it !!";    
+            }
+            else{
+                document.getElementById("ShowResult").innerHTML = "Sorry You Loss it !! The Number was " + RandomNumber;
+            }
+        }
+    </script>
+</body>
+</html>

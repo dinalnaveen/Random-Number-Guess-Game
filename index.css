@@ -1,0 +1,45 @@
+body{
+    background-color: blueviolet;
+}
+.container{
+    background-color: white;
+    padding: 10px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+h1{
+    text-align:center;
+}
+#number{
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+.inputColor{
+    border: solid purple;
+    width: 45px;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    text-decoration: purple;
+}
+#guessButton{
+    width: 80px;
+    height: 40px;
+    color: white;
+    background-color: purple;
+    position: relative;
+    left: 44.5%;
+    top: 10px;
+    border: none;
+    
+}
+#ShowResult{
+    position: relative;
+    left: 30%;
+    top: 10px;
+    font-weight: bold;
+    font-size: large;
+}
